@@ -10,7 +10,7 @@ The plugin cannot be compiled as dynamic plugin libray, it can only be compiled 
 
 # Download OneSQL (prebuilt with OneAgent plugin)
 
-Visit http://www.onexsoft.com/download to get the prebuilt RPM package with OneAgent plugin.
+Visit http://www.onexsoft.com/?page_id=3391 to get the prebuilt RPM package with OneAgent plugin.
 
 # Contact
 
