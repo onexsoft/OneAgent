@@ -8,10 +8,6 @@ The plugin cannot be compiled as dynamic plugin libray, it can only be compiled 
 - MySQL Space Usage: http://www.onexsoft.com/zh/oneagent-server-space-usage.html
 - InnoDB Perf Metrics: http://www.onexsoft.com/zh/oneagent-innodb-key-metrics.html
 
-# Download OneSQL (prebuilt with OneAgent plugin)
-
-Visit http://www.onexsoft.com/?page_id=3391 to get the prebuilt RPM package with OneAgent plugin.
-
 # View Linux OS performance metrics
 
     mysql> show status like 'oneagent_os%';
@@ -95,6 +91,87 @@ Visit http://www.onexsoft.com/?page_id=3391 to get the prebuilt RPM package with
     | oneagent_fs_tmpused   | 8.174000  |
     +-----------------------+-----------+
     20 rows in set (0.00 sec)
+
+# View MySQL Server Layer Perf Metrics
+
+    mysql> show status like 'oneagent_srv%';
+    +------------------------+---------+
+    | Variable_name          | Value   |
+    +------------------------+---------+
+    | oneagent_srv_abort     | 0       |
+    | oneagent_srv_active    | 1       |
+    | oneagent_srv_binapply  | 0       |
+    | oneagent_srv_bindelay  | 0       |
+    | oneagent_srv_bindump   | 0       |
+    | oneagent_srv_binfiles  | 0       |
+    | oneagent_srv_binlog    | 0       |
+    | oneagent_srv_binslave  | 0       |
+    | oneagent_srv_commit    | 132     |
+    | oneagent_srv_lockget   | 2507    |
+    | oneagent_srv_lockmiss  | 0       |
+    | oneagent_srv_login     | 0       |
+    | oneagent_srv_longqry   | 0       |
+    | oneagent_srv_netin     | 145329  |
+    | oneagent_srv_netout    | 1945148 |
+    | oneagent_srv_rollback  | 0       |
+    | oneagent_srv_session   | 15      |
+    | oneagent_srv_sortmerge | 0       |
+    | oneagent_srv_sortrows  | 18827   |
+    | oneagent_srv_sqldel    | 132     |
+    | oneagent_srv_sqlins    | 133     |
+    | oneagent_srv_sqlsel    | 1848    |
+    | oneagent_srv_sqlupd    | 394     |
+    | oneagent_srv_tcget     | 2507    |
+    | oneagent_srv_tcmiss    | 0       |
+    | oneagent_srv_tmpdisk   | 0       |
+    | oneagent_srv_tmpfile   | 0       |
+    | oneagent_srv_tmptab    | 134     |
+    +------------------------+---------+
+    28 rows in set (0.00 sec)
+
+# View MySQL InnoDB Perf Metrics
+
+    mysql> show status like 'oneagent_idb%';
+    +-------------------------+---------+
+    | Variable_name           | Value   |
+    +-------------------------+---------+
+    | oneagent_idb_dataread   | 0       |
+    | oneagent_idb_datawrite  | 232960  |
+    | oneagent_idb_ib         | 1       |
+    | oneagent_idb_ibdisop    | 0       |
+    | oneagent_idb_ibfree     | 0       |
+    | oneagent_idb_ibmerg     | 0       |
+    | oneagent_idb_ibmrgop    | 0       |
+    | oneagent_idb_ibseg      | 2       |
+    | oneagent_idb_lockelap   | 0       |
+    | oneagent_idb_locksess   | 0       |
+    | oneagent_idb_locktime   | 0       |
+    | oneagent_idb_lockwait   | 0       |
+    | oneagent_idb_log        | 2308    |
+    | oneagent_idb_logckpt    | 5570395 |
+    | oneagent_idb_logflush   | 0       |
+    | oneagent_idb_logwait    | 0       |
+    | oneagent_idb_logwrite   | 1       |
+    | oneagent_idb_pagecreate | 0       |
+    | oneagent_idb_pageflush  | 7       |
+    | oneagent_idb_pageread   | 7       |
+    | oneagent_idb_pagewait   | 0       |
+    | oneagent_idb_pagewrite  | 7       |
+    | oneagent_idb_rowdel     | 0       |
+    | oneagent_idb_rowins     | 1       |
+    | oneagent_idb_rowsel     | 0       |
+    | oneagent_idb_rowupd     | 0       |
+    | oneagent_idb_trx        | 1       |
+    | oneagent_idb_trxlist    | 0       |
+    | oneagent_idb_trxlong    | 0       |
+    | oneagent_idb_trxpurge   | 0       |
+    | oneagent_idb_trxrseg    | 1682    |
+    | oneagent_idb_trxtime    | 0       |
+    | oneagent_idb_trxview    | 0       |
+    | oneagent_idb_undoall    | 377     |
+    | oneagent_idb_undomax    | 3       |
+    +-------------------------+---------+
+    35 rows in set (0.00 sec)
 
 # Contact
 
