@@ -8,6 +8,9 @@ The plugin cannot be compiled as dynamic plugin libray, it can only be compiled 
 - MySQL Space Usage: http://www.onexsoft.com/zh/oneagent-server-space-usage.html
 - InnoDB Perf Metrics: http://www.onexsoft.com/zh/oneagent-innodb-key-metrics.html
 
+# Download OneSQL (prebuilt with OneAgent plugin)
+
+Visit http://www.onexsoft.com/download to get the prebuilt RPM package with OneAgent plugin.
 
 # Contact
 
