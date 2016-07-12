@@ -12,6 +12,44 @@ The plugin cannot be compiled as dynamic plugin libray, it can only be compiled 
 
 Visit http://www.onexsoft.com/?page_id=3391 to get the prebuilt RPM package with OneAgent plugin.
 
+# View Linux OS performance metrics
+
+    mysql> show status like 'oneagent_os%';
+    +----------------------+----------+
+    | Variable_name        | Value    |
+    +----------------------+----------+
+    | oneagent_os_blkq     | 2        |
+    | oneagent_os_cache    | 884      |
+    | oneagent_os_context  | 8749     |
+    | oneagent_os_filenr   | 0        |
+    | oneagent_os_fork     | 3        |
+    | oneagent_os_free     | 128      |
+    | oneagent_os_ibytes   | 556      |
+    | oneagent_os_idl      | 54       |
+    | oneagent_os_irq      | 2        |
+    | oneagent_os_load     | 1.210000 |
+    | oneagent_os_nerr     | 0        |
+    | oneagent_os_obytes   | 342      |
+    | oneagent_os_pgin     | 0        |
+    | oneagent_os_pgout    | 1048     |
+    | oneagent_os_proc     | 186      |
+    | oneagent_os_ptable   | 4        |
+    | oneagent_os_runq     | 2        |
+    | oneagent_os_swap     | 0        |
+    | oneagent_os_swpin    | 0        |
+    | oneagent_os_swpout   | 0        |
+    | oneagent_os_sys      | 7        |
+    | oneagent_os_tcpacpt  | 2        |
+    | oneagent_os_tcpalloc | 44       |
+    | oneagent_os_tcpconn  | 2        |
+    | oneagent_os_tcpuse   | 43       |
+    | oneagent_os_tcpwait  | 12       |
+    | oneagent_os_uptime   | 9019     |
+    | oneagent_os_usr      | 16       |
+    | oneagent_os_wio      | 21       |
+    +----------------------+----------+
+    29 rows in set (0.00 sec)
+
 # View Disk IO Statistics
 
     mysql> show status like 'oneagent_d1%';
