@@ -188,7 +188,6 @@ unsigned long  mysql_iolog_offset  = 0;
 unsigned long  mysql_relaylog_offset = 0;
 unsigned long  mysql_apply_delay = 0;
 
-extern "C" void tcc_clear_long_control();
 void getJSONStatus(void *con);
 
 struct oneagent_context
@@ -419,8 +418,6 @@ pthread_handler_t oneagent_heartbeat(void *p)
         }
     }
     mutex_exit(&trx_sys->mutex);
-
-    tcc_clear_long_control();
 
     getOSLoadRecord(&con->os1, &con->os2, &con->rec);
 
